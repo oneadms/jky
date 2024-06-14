@@ -18,8 +18,8 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Docker Build And Push
         run: |
-          docker build --platform=linux/amd64 -t ghcr.io/oneadm/jky:1.0 .
-          docker push ghcr.io/oneadm/jky:1.0
+          docker build --platform=linux/amd64 -t ghcr.io/oneadms/jky:1.0 .
+          docker push ghcr.io/oneadms/jky:1.0
       - name: Configure kubectl
         uses: steebchen/kubectl@v2.0.0
       - name: Deploy kubectl

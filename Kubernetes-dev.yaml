@@ -31,7 +31,7 @@ spec:
         version: v1
     spec:
       containers:
-        - image: oneadm/jky:1.0
+        - image: ghrc.io/oneadm/jky:1.0
           imagePullPolicy: Always
           name: jky
           command: [ "/bin/sh", "-c", "env" ]
